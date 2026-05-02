@@ -1,0 +1,23 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    /* ── Active font — uncomment one to switch ── */
+    /* --font-main: 'Inter', sans-serif; */
+    /* --font-main: 'DM Sans', sans-serif; */
+    /* --font-main: 'Outfit', sans-serif; */
+    /* --font-main: 'Playfair Display', serif; */
+    --font-main: 'Space Grotesk', sans-serif;
+    /* --font-main: 'Syne', sans-serif; */
+    /* --font-main: 'Raleway', sans-serif; */
+
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+}
