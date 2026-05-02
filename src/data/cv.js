@@ -4,7 +4,7 @@ export const cv = {
     jobTitle: 'Salesforce Engineer',
     yearsOfExperience: 7,
     birthDate: '1991-10-16',
-    availableForWork: true,
+    availableForWork: false,
     contacts: [
         { type: 'email', label: 'Email', display: 'ihar.sharevich@gmail.com', href: 'mailto:igor@example.com' },
         { type: 'linkedin', label: 'LinkedIn', display: 'linkedin.com/in/igor-sharevich', href: 'https://www.linkedin.com/in/igor-sharevich-620a72193/' },
