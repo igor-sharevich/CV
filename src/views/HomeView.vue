@@ -146,6 +146,7 @@ function scrollToResume() {
     display: grid;
     grid-template-columns: 35% 37% 28%;
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
     overflow: hidden;
 }
@@ -558,6 +559,7 @@ function scrollToResume() {
         flex-direction: column;
         height: auto;
         min-height: 100vh;
+        min-height: 100dvh;
         width: 100%;
         overflow: visible;
     }

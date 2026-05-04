@@ -180,6 +180,7 @@ function downloadPdf() {
     display: grid;
     grid-template-columns: 400px 1fr;
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -589,6 +590,7 @@ a.exp-company:hover {
         grid-template-columns: 1fr;
         height: auto;
         min-height: 100vh;
+        min-height: 100dvh;
         overflow: visible;
     }
 

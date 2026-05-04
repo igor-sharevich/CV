@@ -75,6 +75,7 @@ import ContactIcon from '../components/ContactIcon.vue'
     display: grid;
     grid-template-columns: 55% 45%;
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
     overflow: hidden;
 
@@ -333,6 +334,7 @@ h1 {
         grid-template-columns: 1fr;
         height: auto;
         min-height: 100vh;
+        min-height: 100dvh;
         overflow: visible;
     }
 
