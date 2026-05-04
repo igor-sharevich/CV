@@ -326,4 +326,54 @@ h1 {
     white-space: nowrap;
     pointer-events: none;
 }
+
+/* ── MOBILE ──────────────────────────────── */
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+    .col-left {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .left-inner {
+        padding: 40px 24px 36px;
+        height: auto;
+        justify-content: flex-start;
+        gap: 32px;
+    }
+
+    .line {
+        font-size: clamp(36px, 9vw, 56px);
+    }
+
+    .col-right {
+        width: 100%;
+        overflow: visible;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .right-inner {
+        padding: 36px 24px 40px;
+        gap: 32px;
+    }
+
+    .vertical-text {
+        display: none;
+    }
+
+    .quote-text {
+        font-size: 17px;
+    }
+
+    .name-big {
+        font-size: 26px;
+    }
+}
 </style>

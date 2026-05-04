@@ -213,7 +213,7 @@ function scrollToResume() {
 .headline {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 0.2rem;
     line-height: 1.05;
 }
 .line {
@@ -526,5 +526,99 @@ function scrollToResume() {
 .contact-link svg {
     flex-shrink: 0;
     opacity: 0.5;
+}
+
+/* ── TABLET ──────────────────────────────── */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home {
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    .col-center {
+        height: 100vh;
+    }
+
+    .photo {
+        object-position: center center;
+    }
+
+    .line {
+        font-size: clamp(32px, 4vw, 52px);
+    }
+
+    .line--bold {
+        font-size: clamp(34px, 4.5vw, 58px);
+    }
+}
+
+/* ── MOBILE ──────────────────────────────── */
+@media (max-width: 768px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .brand {
+        justify-content: end;
+    }
+
+    .brand svg {
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    /* Photo on top */
+    .col-center {
+        order: 1;
+        width: 100%;
+        height: 60vh;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .photo {
+        object-position: center center;
+    }
+
+    .col-left {
+        order: 0;
+        width: 100%;
+        padding: 28px 24px;
+        position: relative;
+    }
+
+    .col-right {
+        order: 1;
+        width: 100%;
+        padding: 24px 24px 32px;
+        overflow-y: visible;
+        flex-shrink: 0;
+    }
+
+    /* Scale down headline */
+    .line {
+        font-size: clamp(30px, 8vw, 52px);
+    }
+
+    .line--bold {
+        font-size: clamp(29px, 9vw, 58px);
+    }
+
+    /* Scroll arrow: pull out of absolute and into flow */
+    .scroll-arrow-wrap {
+        position: static;
+        margin-top: 24px;
+        animation: none;
+        justify-content: flex-end;
+    }
+
+    /* Hide L-block overlay on mobile */
+    .white-block {
+        display: none;
+    }
 }
 </style>

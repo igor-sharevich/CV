@@ -582,4 +582,55 @@ a.exp-company:hover {
     0%, 100% { transform: translateY(0); }
     50%       { transform: translateY(6px); }
 }
+
+/* ── MOBILE ──────────────────────────────── */
+@media (max-width: 768px) {
+    .resume {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+    .sidebar {
+        overflow-y: visible;
+        width: 100%;
+    }
+
+    .sidebar-inner {
+        padding: 32px 24px;
+        min-height: unset;
+        justify-content: flex-start;
+    }
+
+    .sidebar-footer {
+        margin-top: 16px;
+    }
+
+    .content {
+        padding: 32px 24px;
+        overflow-y: visible;
+    }
+
+    .scroll-arrow-wrap {
+        position: static;
+        margin: 24px 24px 32px auto;
+        animation: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .exp-period {
+        white-space: normal;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
 </style>

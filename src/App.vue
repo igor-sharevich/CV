@@ -39,4 +39,12 @@ html, body {
     scroll-snap-stop: always;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .snap-page {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+}
 </style>
